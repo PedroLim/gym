@@ -35,4 +35,6 @@ class User
   # field :locked_at,       type: Time
 
   field :name, type: String
+
+  embeds_many :training_plans, class_name: 'TrainingPlan'
 end
